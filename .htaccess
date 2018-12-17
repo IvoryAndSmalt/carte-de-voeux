@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteBase  /raleth/
+RewriteCond  %{REQUEST_FILENAME} !-f
+RewriteCond  %{REQUEST_FILENAME} !-d
+RewriteRule ^(Home)$ index.php?page=$1 [NC,L,QSA]
+RewriteRule ^(Home)/([0-9]+)$ index.php?page=$1&id_template=$2 [NC,L,QSA]
+
+RewriteRule ^(OneMeme)$ index.php?page=$1 [NC,L,QSA]
+RewriteRule ^(OneMeme)/([0-9]+)$ index.php?page=$1&id_template=$2 [NC,L,QSA]
+
+RewriteRule ^(Display)$ index.php?page=$1 [NC,L,QSA]
+RewriteRule ^(Display)/([0-9]+)$ index.php?page=$1&id_meme=$2 [NC,L,QSA]
