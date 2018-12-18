@@ -2,4 +2,4 @@ RewriteEngine on
 RewriteBase  /raleth/
 RewriteCond  %{REQUEST_FILENAME} !-f
 RewriteCond  %{REQUEST_FILENAME} !-d
-RewriteRule ^(Home)$ index.php?page=$1 [NC,L,QSA]
+RewriteRule ^(Accueil)$ index.php?page=$1 [NC,L,QSA]

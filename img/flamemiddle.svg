@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="186.72633mm"
+   height="255.99556mm"
+   viewBox="0 0 186.72633 255.99556"
+   version="1.1"
+   id="svg6921"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="flamemiddle.svg">
+  <defs
+     id="defs6915" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-234.43912"
+     inkscape:cy="465.71165"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="845"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6918">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.6554309,-22.318647)">
+    <path
+       sodipodi:nodetypes="zscczczcczz"
+       inkscape:connector-curvature="0"
+       id="path4757"
+       d="m 101.31387,278.3142 c -35.166603,0 -94.6584391,-11.22071 -94.6584391,-73.36755 0,-62.14682 33.3747921,-111.058661 33.3747921,-111.058661 0,0 -10.357555,57.975171 0.861201,83.725611 0,0 4.507759,-40.55131 18.126084,-71.64121 13.618324,-31.089887 31.720784,-34.598183 34.022418,-83.653743 0,0 37.330894,35.877687 37.330894,69.555622 0,33.677911 -9.79705,42.135391 -2.01277,63.153661 0,0 17.87757,-3.87785 18.84508,-38.12221 3.40545,-2.60331 46.17863,29.18293 46.17863,79.12183 0,49.9389 -56.9028,82.28665 -92.06939,82.28665 z"
+       style="display:inline;opacity:1;fill:#f59227;fill-opacity:1;stroke:none;stroke-width:1.3020556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="flamemiddle" />
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="198.07242mm"
+   height="255.67731mm"
+   viewBox="0 0 198.07242 255.67731"
+   version="1.1"
+   id="svg6921"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="flameouter.svg">
+  <defs
+     id="defs6915" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-238.08325"
+     inkscape:cy="457.92328"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="845"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6918">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.6196082,-20.576218)">
+    <path
+       sodipodi:nodetypes="cscszccczc"
+       inkscape:connector-curvature="0"
+       id="path4755"
+       d="m 105.54388,276.24519 c -25.642888,0 -97.9242718,-9.77101 -97.9242718,-81.34921 0,-46.35791 38.0920458,-99.426836 38.0920458,-99.426836 0,0 -8.732684,40.513056 -3.55287,61.980356 1.12832,4.68076 6.232381,-27.45935 23.081263,-56.1697 16.848911,-28.71032 33.74973,-28.167081 29.21452,-80.703582 0,0 64.240163,26.147942 35.832663,150.431502 0,0 22.55108,-7.77193 22.27427,-64.88569 9.31014,3.49042 53.13053,36.51664 53.13053,84.50853 0,47.99194 -43.5631,86.27183 -100.1501,85.61463 z"
+       style="display:inline;opacity:1;fill:#f6be4e;fill-opacity:1;stroke:none;stroke-width:1.03300583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="flameouter" />
+  </g>
+</svg>
