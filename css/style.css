@@ -49,12 +49,185 @@ table {
 /************************************/
 /***************END OF CSS RESET*****/
 /************************************/
-.container{
-	width: 80%;
-	margin: 0 auto;
+body{
+	background: #000033;
 }
 
+@keyframes dim {
+	0% {box-shadow:20px 20px 200px 15px rgba(218, 165, 32, 0.6),-20px -20px 200px 15px rgba(218, 165, 32, 0.6)}
+	50% {box-shadow:20px 20px 200px 5px rgba(218, 165, 32, 0.6),-20px -20px 200px 5px rgba(218, 165, 32, 0.6)}
+	100% {box-shadow:20px 20px 200px 30px rgba(218, 165, 32, 0.6),-20px -20px 200px 30px rgba(218, 165, 32, 0.6)}
+}
+
+.fenetre{
+	width: 80%;
+	position: relative;
+	margin: 15px auto;
+	height: auto;
+	line-height: 0;
+	animation: dihm 10s infinite ease-in-out alternate;
+	overflow: hidden;
+}
+
+/*sizer element*/
 #fenetre{
+	position: relative;
 	width: 100%;
 	height: auto;
+	z-index: 50;
+	pointer-events: none;
+}
+
+#background{
+	position: absolute;
+	z-index: 0;
+	width: 99%;
+	bottom: 3%;
+	left: 0.5%;
+	pointer-events: none;
+}
+
+#tapis{
+	position: absolute;
+	width: 50%;
+	bottom: 10%;
+	left: 25%;
+	pointer-events: none;
+}
+
+
+
+/*elements de la cheminee*/
+.cheminee{
+	position: absolute;
+	width: 40%;
+	bottom: 25%;
+	left: 30%;
+	pointer-events: none;
+}
+
+/*sizer element*/
+#cheminee{
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 40;
+	pointer-events: none;
+}
+
+/*positioned elements*/
+#firepit{
+	position: absolute;
+	width: 35.7%;
+	bottom: 9.3%;
+	left: 32%;
+	z-index: 41;
+	pointer-events: none;
+}
+
+#lueur{
+	position: absolute;
+	width: 15%;
+	bottom: 20%;
+	left: 42.5%;
+	z-index: 42;
+	pointer-events: none;
+}
+
+@keyframes outer {
+	0% {transform: rotate(5deg) skew(5deg, -5deg)}
+	25% {transform: rotate(-10deg) skew(0deg, 5deg)}
+	50% {transform: rotate(0deg) skew(5deg, -5deg)}
+	75% {transform: rotate(-5deg) skew(0deg, 5deg)}
+	100% {transform: rotate(10deg) skew(5deg, -5deg)}
+}
+@keyframes middle {
+	0% {transform: rotate(5deg) scaleX(-1) skew(5deg, -5deg)}
+	25% {transform: rotate(-10deg) scaleX(-1) skew(5deg, -5deg)}
+	50% {transform: rotate(0deg) scaleX(-1) skew(0deg, 5deg)}
+	75% {transform: rotate(-5deg) scaleX(-1) skew(0deg, 5deg)}
+	100% {transform: rotate(10deg) scaleX(-1) skew(-5deg, 0deg)}
+}
+
+#flameouter{
+	position: absolute;
+	width: 10%;
+	bottom: 17.5%;
+	left: 45%;
+	z-index: 43;
+	animation: outer 0.5s infinite alternate ease-in-out;
+}
+
+#flamemiddle{
+	position: absolute;
+	width: 8%;
+	bottom: 17.5%;
+	left: 45.7%;
+	z-index: 44;
+	animation: middle 0.4s 0.1s infinite alternate ease-in-out;
+}
+
+#flameinner{
+	position: absolute;
+	width: 5%;
+	bottom: 18%;
+	left: 47.5%;
+	z-index: 45;
+	animation: outer 0.3s 0.15s infinite alternate ease-in-out;
+}
+
+.bottes{
+	position: absolute;
+	width: 10%;
+	z-index: 45;
+	pointer-events: none;
+}
+
+.rouge{
+	bottom: 67%;
+}
+
+.verte{
+	bottom: 63%;
+}
+
+#botte1{
+	left: 8%;
+}
+
+#botte2{
+	left : 26%;
+}
+
+#botte3{
+	left : 44%;
+}
+
+#botte4{
+	left : 62%;
+}
+
+#botte5{
+	left : 80%;
+}
+
+@media (max-width: 900px){
+	@keyframes dim {
+		0% {box-shadow:5px 5px 50px 15px rgba(218, 165, 32, 0.6),-5px -5px 50px 15px rgba(218, 165, 32, 0.6)}
+		50% {box-shadow:5px 5px 50px 5px rgba(218, 165, 32, 0.6),-5px -5px 50px 5px rgba(218, 165, 32, 0.6)}
+		100% {box-shadow:5px 5px 50px 30px rgba(218, 165, 32, 0.6),-5px -5px 50px 30px rgba(218, 165, 32, 0.6)}
+	}
+	
+	.fenetre{
+		width: 80%;
+		position: relative;
+		margin: 15px auto;
+		height: auto;
+		line-height: 0;
+		animation: dhim 10s infinite ease-in-out alternate;
+	}
+}
+
+.reindeer{
+	position: absolute;
 }
