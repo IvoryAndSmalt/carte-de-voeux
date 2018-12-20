@@ -1,6 +1,7 @@
 /********PLAY WITH REINDEERS********/
 var reindeers = document.getElementsByClassName('reindeer');
 
+
 Array.prototype.forEach.call(reindeers, function(el) {
     el.style.position= "absolute";
     el.style.display = "block";
@@ -19,6 +20,8 @@ eclair.style.display="none";
 tornade.style.display="none";
 var randpos;
 var randrein;
+var merry = document.getElementById('merry');
+merry.style.opacity = "0";
 
 setInterval(function(){
     randrein = Math.floor(Math.random() * 3) + 1;
@@ -50,6 +53,9 @@ setInterval(function(){
         thisrein.style.bottom = "71%";
         thisrein.style.left = "33.3%";
         thisrein.style.zIndex="44";
+        merry.style.bottom = "54%";
+        merry.style.width = "22%";
+        merry.style.left = "75%";
         break;
 
         case 2:
@@ -58,6 +64,9 @@ setInterval(function(){
             thisrein.style.bottom = "71%";
             thisrein.style.left = "47.8%";
             thisrein.style.zIndex="44";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "2.5%";
         break;
 
         case 3:
@@ -66,6 +75,9 @@ setInterval(function(){
             thisrein.style.bottom = "71%";
             thisrein.style.left = "62.1%";
             thisrein.style.zIndex="44";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "2.5%";
         break;
 
         case 4:
@@ -74,6 +86,9 @@ setInterval(function(){
             thisrein.style.bottom = "69%";
             thisrein.style.left = "40.5%";
             thisrein.style.zIndex="44";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "75%";
         break;
 
         case 5:
@@ -82,6 +97,9 @@ setInterval(function(){
             thisrein.style.bottom = "69%";
             thisrein.style.left = "54.8%";
             thisrein.style.zIndex="44";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "2.5%";
         break;
 
         case 6:
@@ -90,6 +108,9 @@ setInterval(function(){
             thisrein.style.bottom = "29%";
             thisrein.style.left = "29%";
             thisrein.style.zIndex="39";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "75%";
         break;
 
         case 7:
@@ -98,6 +119,9 @@ setInterval(function(){
             thisrein.style.bottom = "29%";
             thisrein.style.left = "62%";
             thisrein.style.zIndex="39";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "2.5%";
         break;
 
         case 8:
@@ -106,6 +130,9 @@ setInterval(function(){
             thisrein.style.bottom = "15%";
             thisrein.style.left = "-5%";
             thisrein.style.zIndex="49";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "75%";
         break;
 
         case 9:
@@ -114,18 +141,34 @@ setInterval(function(){
             thisrein.style.bottom = "15%";
             thisrein.style.left = "87%";
             thisrein.style.zIndex="49";
+            merry.style.bottom = "54%";
+            merry.style.width = "22%";
+            merry.style.left = "2.5%";
         break;
     }
-    console.log(thisrein);
-    thisrein.style.zIndex= "99";
+    
     thisrein.addEventListener('mouseover', function(){ 
-        console.log(thisrein);
         thisrein.style.value = "check";
         if (thisrein.style.value == "check") {
-            console.log("oui");
+            merry.style.opacity = "1";
         }
+    });
+    thisrein.addEventListener('mouseout', function(){
+        merry.style.opacity = "0";
     });
     
 }, 2000);
 
+
+
+function verifMail(champ) { //on prépare une fonction de vérification du mail
+    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+    if (!regex.test(champ.value)) {
+        return false;
+    }
+
+    else {
+        return true;
+    }
+}
 

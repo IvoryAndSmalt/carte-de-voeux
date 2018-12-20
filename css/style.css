@@ -53,6 +53,83 @@ body{
 	background: #000033;
 }
 
+.homecontainer{
+	width: 70%;
+	min-height: 300px;
+	background: ivory;
+	margin: 10% auto;
+	border-radius: 1%;
+}
+
+#mytitle{
+	font-family: 'Parisienne', sans-serif;
+	text-align: center;
+	padding-top: 5%;
+	font-weight: 600;
+	font-size: 3em;
+	color:gold;
+	text-shadow: orangered 2px 2px 2px;
+}
+
+#contact{
+	padding: 1%;
+}
+
+#email, #name, #whoami{
+	display: block;
+	margin: 2% auto;
+	font-size: 1.5em;
+	text-align: center;
+	width: 60%;
+	padding: 1.5%;
+}
+
+#submit{
+	display: block;
+	width: 30%;
+	font-family: 'Parisienne', sans-serif;
+	font-weight: 600;
+	font-size: 3em;
+	background: goldenrod;
+	color: #000033;
+	font-size: 3em;
+	padding: 0.5% 1.5%;
+	border-radius: 15% 15% 15% 15%;
+	margin: 2% auto;
+}
+
+@media(max-width: 576px){
+	#email, #name, #whoami{
+		display: block;
+		margin: 2% auto;
+		font-size: 0.8em;
+		text-align: center;
+		width: 80%;
+		padding: 1.5%;
+	}
+	#submit{
+		display: block;
+		width: 50%;
+		font-family: 'Parisienne', sans-serif;
+		font-weight: 600;
+		font-size: 1.5em;
+		background: goldenrod;
+		color: #000033;
+		padding: 2% 1.5%;
+		border-radius: 15% 15% 15% 15%;
+		margin: 2% auto;
+	}
+	#mytitle{
+		font-family: 'Parisienne', sans-serif;
+		text-align: center;
+		padding: 10% 2%;
+		font-weight: 600;
+		font-size: 1.5em;
+		color:gold;
+		text-shadow: orangered 2px 2px 2px;
+	}
+}
+
 @keyframes dim {
 	0% {box-shadow:20px 20px 200px 15px rgba(218, 165, 32, 0.6),-20px -20px 200px 15px rgba(218, 165, 32, 0.6)}
 	50% {box-shadow:20px 20px 200px 5px rgba(218, 165, 32, 0.6),-20px -20px 200px 5px rgba(218, 165, 32, 0.6)}
@@ -211,23 +288,73 @@ body{
 	left : 80%;
 }
 
-@media (max-width: 900px){
-	@keyframes dim {
-		0% {box-shadow:5px 5px 50px 15px rgba(218, 165, 32, 0.6),-5px -5px 50px 15px rgba(218, 165, 32, 0.6)}
-		50% {box-shadow:5px 5px 50px 5px rgba(218, 165, 32, 0.6),-5px -5px 50px 5px rgba(218, 165, 32, 0.6)}
-		100% {box-shadow:5px 5px 50px 30px rgba(218, 165, 32, 0.6),-5px -5px 50px 30px rgba(218, 165, 32, 0.6)}
-	}
-	
-	.fenetre{
-		width: 80%;
-		position: relative;
-		margin: 15px auto;
-		height: auto;
-		line-height: 0;
-		animation: dhim 10s infinite ease-in-out alternate;
-	}
-}
-
 .reindeer{
 	position: absolute;
 }
+  
+  /* Start */
+  .side::before,.side::after {
+	  display: none;
+  }
+  
+  .side .md > blockquote:last-of-type,
+  .side .md > blockquote:last-of-type p,
+  .side .md > blockquote:last-of-type a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+  }
+  
+#snow1 {
+	display: block;
+	height: 2000px;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/299775/snow-sparse-flipped.png);
+	animation: s 10s linear infinite;
+	background-size: auto;
+	z-index: 60;
+  }
+  
+  @keyframes s {
+	0% {
+		transform: translateY(-1000px);
+	}
+  }
+
+#merry{
+	position: absolute;
+	opacity: 0;
+	height: auto;
+	width: 50%;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 49;
+	transition: opacity 0.2s ease-in-out;
+	animation: jackInTheBox 2s infinite alternate;
+}
+
+@keyframes jackInTheBox {
+	from {
+	  -webkit-transform: rotate(-3deg);
+	  transform: rotate(-3deg);
+	}
+  
+	50% {
+	  -webkit-transform: rotate(3deg);
+	  transform: rotate(3deg);
+	}
+  
+	70% {
+	  -webkit-transform: rotate(-3deg);
+	  transform: rotate(-3deg);
+	}
+  
+	to {
+		-webkit-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+  }
